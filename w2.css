@@ -1,0 +1,131 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+color: #000000dd;
+
+    
+} 
+body{
+    background: rgba(0, 0, 0, 0.899);
+    color: white;
+}
+.App{
+    width:90%;
+    max-width:450px;
+    background:linear-gradient(135deg ,#c2d9dfc3 ,#31d6ef);
+    margin: 100px auto 0;
+    padding: 40px 35px;
+    text-align: center;
+    border-radius: 20px;
+
+}.box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+}
+.box input{
+    border: none;
+    outline: none;
+    background:#ebfffc;
+    height:40px;
+    border-radius:28px;
+    color:#555;
+    padding:10px;
+    flex:1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+.box button{
+    height: 60px;
+    width: 60px;
+    background:#ebfffc;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+}
+.box button img{
+   width: 16px;
+}
+.winfo {
+    width: 140px;
+    margin-top: 30px;
+ 
+}
+
+.tempc,.tempf {
+   
+    font-size: 40px;
+    font-weight: 400px;
+}
+.location{
+    margin-top: 35px;
+    padding-left:35px ;
+    text-align: left;
+    font-size: 37px;
+    font-weight: 300px;
+    
+}
+.time{
+    padding-left:35px ;
+    text-align:left;
+    font-size: 25px;
+    font-weight: 400px;
+
+}
+.des{ 
+    margin-bottom: 10px;
+    font-size: 25px; 
+}
+.region{
+    padding-left:35px ;
+    text-align: left;
+    font-size: 35px; 
+}
+
+
+.temp{
+    
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 10px 50px 10px;
+    padding: 0 20px;
+}
+.main{
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+.main img{
+    width: 50px;
+    margin-right: 10px;
+}
+.wind,.humidity{
+    font-size:20px;
+    margin-top:-6px;
+}
+.weather{
+    display:block;
+}
+.error{
+    font-size: 15px;
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 10px;
+    display:none;
+}
+
+@keyframes shake {
+    0%{transform: translateX(10px);}
+    25%{transform: translateX(-10px);}
+    50%{transform: translateX(0px);}
+    75%{transform: translateX(-10px);}
+    100%{transform: translateX(10px);}
+}
