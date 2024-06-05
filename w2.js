@@ -1,11 +1,8 @@
 const searchinput=document.querySelector(".box input");
 const searchbtn=document.querySelector(".box button");
 const winfo= document.querySelector(".winfo")
-
-// const Apikey="39aaeabef0a1c1986e98e17b4b8b631a"
-// const Api="https://api.openweathermap.org/data/2.5/weather?units=metric&q="
 const Apikey="5b102ebd640945d2b9051410232910"
-// const Api="http://api.weatherapi.com/v1/current.json?&aqi=no&q="
+
 
 async function checkweather(city) {
     let Api=`http://api.weatherapi.com/v1/current.json?key=5b102ebd640945d2b9051410232910&q=${city}&aqi=yes`
@@ -33,7 +30,7 @@ document.querySelector(".humidity").innerHTML=data.current.humidity+'%';
 document.querySelector(".winfo").src=data.current.condition.icon;
 document.querySelector(".weather").style.display ="block"
 document.querySelector(".error").style.display="none"
-// let time=data.location.localtime;
+
 Time(data.location.localtime)
 }
 
